@@ -24,9 +24,8 @@ public class LoginPage extends TestBase
 		return driver.findElement(emailLogin);
 	}
 	
-	public void getLogin(By username,String pwd) {
-              username.s		
-		
+	public void getlogin() {
+		System.out.println("hellow world");
 	}
 	
 	 

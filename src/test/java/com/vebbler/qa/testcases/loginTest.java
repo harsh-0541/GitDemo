@@ -23,30 +23,6 @@ public class loginTest extends TestBase
 		 loginPage=new LoginPage();
 	}
 	
-	@Test(priority=1)
-	public void LoginbarTest() {
-		loginPage.validateLogin();
-	}
-	@Test(priority=2)
-	public void EmailLoginTest() {
-		loginPage.ValidateEmailLogin();
-	}
-	@Test(priority=3)
-	public void Titletest() {
-	String title=loginPage.validateTitle();
-	Assert.assertEquals(title, "Login to Vebbler Studio");
-	}
-	@Test(priority=4)
-	public void vebblerLogoTest() {
-	boolean flag=loginPage.validateVebblerLogo();
-	Assert.assertTrue(flag);
-	}
-	
-	@Test(priority=5)
-	public void loginPageTest() {
-		homePage=loginPage.Validateloginpage(prop.getProperty("username"),prop.getProperty("password"));
-		
-	}
 	
 	
 	@AfterMethod
