@@ -22,7 +22,10 @@ public class loginTest extends TestBase
 		initializer();	
 		 loginPage=new LoginPage();
 	}
-	
+	@Test
+	public void gitcommand() {
+		System.out.println("gitcommand");
+	}
 	
 	
 	@AfterMethod
